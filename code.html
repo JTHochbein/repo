@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Projekt</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+
+
+	<style type="text/css">
+		.head1{
+			color: black;
+			font-family: fantasy;
+			background-color: lightblue;
+		}
+		.head2{
+			color: black;
+			font-family: fantasy;
+			background-color: lightblue;
+		}
+		#headID1{ 
+			color: lightblue;
+			font-family: fantasy;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<h1 class="head1"> Wilkommen auf meiner Seite</h1>
+<h2 class ="head2"> Hier findest du Infos über mich</h2>
+<h3 id="headID1">Dies ist ein ID Test (nicht beachten)</h3>
+
+<ul>
+<li><a href="#">Über mich</a>
+	<ul>
+		<li><a href="#">Joel Hochbein</a></li>
+		<li><a href="#">jhochbein@nelta.de</a></li>
+		<li><a href="#">Telefon: 123456789</a></li>
+		<li><a href="#">Fax: 123456789</a></li>
+	</ul>
+</li>
+
+<li><a href="#">Über die Seite</a>
+	<ul>
+		<li><a href="#">Erstellt mit HTML</a></li>
+		<li><a href="#">Erstellt am 20.02.23</a></li>
+	</ul>
+</li>
+</ul>
+
+<div class="container">
+	<div class="box">
+		<div class="icon"><i class="fa fa-info" aria-hidden="true"></i></div>
+		<div class="content">
+			<h4>InfoInfoInfo</h4>
+			<p>das ist die Infodas ist die Infodas ist die Infodas ist die Infodas ist die Infodas ist die Info
+			</p>
+		</div>
+	</div>
+	<div class="container">
+	<div class="box">
+		<div class="icon"><i class="fa fa-etsy" aria-hidden="true"></i></div>
+		<div class="content">
+			<h4>Das ist die 2. Info Box</h4>
+			<p>Das ist der Inhalt der 2. Info Box
+			</p>
+		</div>
+	</div>
+	<div class="container">
+	<div class="box">
+		<div class="icon"><i class="fa fa-car" aria-hidden="true"></i></div>
+		<div class="content">
+			<h4>Das ist die 3. Info Box</h4>
+			<p>Das ist der Inhalt der 3. Info Box
+			</p>
+		</div>
+	</div>
+	<div class="container">
+	<div class="box">
+		<div class="icon"><i class="fa fa-diamond" aria-hidden="true"></i></div>
+		<div class="content">
+			<h4>Das ist die 4. Info Box</h4>
+			<p>Das ist der Inhalt der 4. Info Box
+			</p>
+		</div>
+	</div>
+</div>
+
+
+<div class="slider">
+	<div class="slides">
+		<input type="radio" name="radio-btn" id="radio1">
+		<input type="radio" name="radio-btn" id="radio2">
+		<input type="radio" name="radio-btn" id="radio3">
+		<input type="radio" name="radio-btn" id="radio4">
+
+		<div class="slide first">
+			<img src="1.jpg" alt="">
+		</div>
+
+		<div class="slide">
+			<img src="2.jpg" alt="">
+		</div>
+
+		<div class="slide">
+			<img src="3.jpg" alt="">
+		</div>
+
+		<div class="slide">
+			<img src="4.jpg" alt="">
+		</div>
+
+		<div class="navigation-auto">
+			<div class="auto-btn1"></div>
+			<div class="auto-btn2"></div>
+			<div class="auto-btn3"></div>
+			<div class="auto-btn4"></div>
+		</div>
+
+	</div>
+
+
+	<div class="navigation-manual">
+		<label for="radio1" class="manual-btn" ></label>
+		<label for="radio2" class="manual-btn" ></label>
+		<label for="radio3" class="manual-btn" ></label>
+		<label for="radio4" class="manual-btn" ></label>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+	var counter =1;
+	setInterval(function(){
+		document.getElementById('radio' +counter).checked = true;
+		counter++;
+		if(counter > 4){
+			counter = 1;
+		}
+	},2000);
+	
+
+
+
+</script>
+</body>
+</html>
