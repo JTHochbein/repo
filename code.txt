@@ -1,5 +1,5 @@
 1. test eins
 2. Das ist eins Konflikt
-3. änderung
-4. änderung 
+3. hallo2
+4. hallo
 5.
